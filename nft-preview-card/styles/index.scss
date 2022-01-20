@@ -6,6 +6,7 @@ $TextWhite: hsl(0, 0%, 100%);
 $FontBlue: hsl(215, 32%, 27%);
 $FontLight: hsl(215, 32%, 42%);
 $FontSize: 18px;
+$Hover: #00FFF8;
 
 body {
     margin: 0;
@@ -43,8 +44,43 @@ body {
             &__avatar {
                 width: 100%;
                 border-radius: 10px;
+                object-fit: contain;
+                opacity: 1;
+                backface-visibility: hidden;
+                transition: .5s ease;
+            }
+
+            &__overlay {
+                transition: .5s ease;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                width: 100%;
+                height: 290px;
+                top: -60%;
+                left: 50%;
+                background-color: $Hover;
+                border-radius: 10px;
+
+                &__view {
+                    background-color: inherit;
+                }
             }
         }
+
+        &__image:hover .Card__image__avatar {
+            opacity: 0.25;
+            cursor: pointer;
+        }
+        
+        &__image:hover .Card__image__overlay {
+            opacity: 0.5;
+            cursor: pointer;
+        } 
+
         &__title {
             width: fit-content;
             text-align: center;
@@ -52,6 +88,13 @@ body {
             &__header {
                 font-family: 'Outfit';
                 color: $TextWhite;
+                font-weight: 600;
+                line-height: normal;
+            }
+            &__header:hover {
+                font-family: 'Outfit';
+                color: $Hover;
+                cursor: pointer;
                 font-weight: 600;
                 line-height: normal;
             }
@@ -106,7 +149,7 @@ body {
             top: 10px;
 
             &__image {
-                width: 50px;
+                width: 40px;
                 border: 1px solid $TextWhite;
                 border-radius: 50px;
                 margin-right: 15px;
@@ -119,6 +162,10 @@ body {
 
                 &--name {
                     color: $TextWhite;
+                }
+                &--name:hover {
+                    color: $Hover;
+                    cursor: pointer;
                 }
             }
         }
