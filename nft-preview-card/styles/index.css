@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.Main {
+  background-color: #0d192b;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+
+.Main .Card {
+  width: 350px;
+  height: 82vh;
+  border-radius: 15px;
+  background-color: #14253d;
+  z-index: 3;
+  -webkit-box-shadow: 10px 10px 28px #000;
+          box-shadow: 10px 10px 28px #000;
+  padding: 30px;
+}
+
+.Main .Card__image {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 60px;
+}
+
+.Main .Card__image__avatar {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.Main .Card__title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+
+.Main .Card__title__header {
+  font-family: 'Outfit';
+  color: white;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.Main .Card__body {
+  width: 100%;
+  text-align: left;
+}
+
+.Main .Card__body__text {
+  font-family: 'Outfit';
+  color: #49658d;
+  font-weight: 400;
+}
+
+.Main .Card__body__flex {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: -10px;
+}
+
+.Main .Card__body__flex__eth {
+  color: #00FFF8;
+  font-family: 'Outfit';
+  font-weight: 400;
+}
+
+.Main .Card__body__flex__clock {
+  color: #49658d;
+  font-family: 'Outfit';
+  font-weight: 400;
+}
+
+.Main .Card__divider {
+  width: 100%;
+  height: 2px;
+  background-color: #2f415b;
+}
+
+.Main .Card__footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+  top: 20px;
+}
+
+.Main .Card__footer__image {
+  width: 50px;
+  border: 1px solid white;
+  border-radius: 50px;
+  margin-right: 15px;
+}
+
+.Main .Card__footer__author {
+  font-family: 'Outfit';
+  font-weight: 400;
+  color: #49658d;
+}
+
+.Main .Card__footer__author--name {
+  color: white;
+}
+
+.Main__footer {
+  font-family: 'Outfit';
+  font-size: 11px;
+  text-align: center;
+  margin-top: 30px;
+  color: #49658d;
+}
+
+.Main__footer__link {
+  color: #3e52a3;
+  text-decoration: none;
+}
+/*# sourceMappingURL=index.css.map */
