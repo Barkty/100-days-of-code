@@ -1,0 +1,10 @@
+.AppLogo {
+    position: relative;
+    left: 15px;
+    object-fit: contain;
+    width: 100px;
+    height: 80px;
+}
+a {
+    text-decoration: none;
+}

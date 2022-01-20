@@ -1,0 +1,218 @@
+.home__wrapper {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+}
+.home__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 210px;
+}
+.carousel__child {
+    width: 55%;
+    height: 500px;
+    position: relative;
+    top: -40px;
+}
+.carousel__image {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+}
+.carousel__notes {
+    width: 45%;
+    height: inherit;
+    box-sizing: border-box;
+    position: relative;
+    top: -500px;
+    right: -55%;
+    padding-left: 65px;
+    padding-bottom: 55px;
+}
+.item__title {
+    color: hsl(0, 0%, 0%);
+    font-family: 'Spartan';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    text-align: justify;
+    width: 70%;
+}
+.item__text {
+    color: hsl(0, 0%, 63%);
+    font-family: 'Spartan';
+    font-size: 12px;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 20px;
+    width: 70%;
+}
+.item__link {
+    font-family: 'Spartan';
+    font-size: 17px;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin-top: -5px;
+    color: hsl(0, 0%, 27%);
+    position: relative;
+    top: 50px;
+}
+.hover {
+    /* font-family: 'Spartan';
+    font-size: 17px;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin-top: -5px;
+    position: relative;
+    top: 50px; */
+    color: hsl(0, 0%, 63%);
+    letter-spacing: 10px;
+}
+.item__a {
+    color: hsl(0, 0%, 27%);
+    letter-spacing: 5px;
+}
+.right {
+    font-size: 18px;
+}
+.home__page {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 200px;
+    margin-top: -1px;
+    padding: 0;
+    position: relative;
+    top: -82px;
+}
+.home__image {
+    width: 30%;
+    height: inherit;
+}
+.about__text__con {
+    width: 40%;
+    height: inherit;
+    padding: 45px 15px 15px 15px;
+    box-sizing: border-box;
+}
+.about__image {
+    width: 100%;
+    height: 255px;
+    object-fit: cover;
+}
+.about__title {
+    font-family: 'Spartan';
+    font-size: 14px;
+    font-weight: 700;
+    color: hsl(0, 0%, 0%);
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.about__text {
+    color: hsl(0, 0%, 63%);
+    font-family: 'Spartan';
+    font-size: 12px;
+    font-weight: 500;
+    text-align: left;
+    line-height: 18px;
+}
+
+@media screen and (max-width: 786px) {
+    .home__item {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+    }
+    .carousel__child {
+        width: 100%;
+        height: 500px;
+        position: relative;
+        top: -12px;
+    }
+    .carousel__notes {
+        width: 100%;
+        height: inherit;
+        box-sizing: border-box;
+        position: relative;
+        top: -10px;
+        right: 0;
+        padding-left: 65px;
+        padding-bottom: 55px;
+    }
+    .home__page {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 400px;
+    }
+    .home__image {
+        width: 100%;
+    }
+    .about__text__con {
+        width: 100%;
+    }
+    .about__title {
+        font-family: 'Spartan';
+        font-size: 22px;
+        font-weight: 700;
+        color: hsl(0, 0%, 0%);
+        text-align: justify;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+    .about__text {
+        color: hsl(0, 0%, 63%);
+        font-family: 'Spartan';
+        font-size: 18px;
+        font-weight: 500;
+        text-align: left;
+        line-height: 25px;
+    }
+}
+@media screen and (max-width: 374px) {
+    .carousel__notes {
+        width: 100%;
+        height: inherit;
+        box-sizing: border-box;
+        position: relative;
+        top: -10px;
+        right: 0;
+        padding-left: 26px;
+        padding-bottom: 55px;
+    }
+    .item__title {
+        color: hsl(0, 0%, 0%);
+        font-family: 'Spartan';
+        font-weight: 700;
+        font-size: 28px;
+        text-align: justify;
+        width: 70%;
+    }
+    .item__text {
+        color: hsl(0, 0%, 63%);
+        font-family: 'Spartan';
+        font-size: 16px;
+        font-weight: 500;
+        text-align: justify;
+        line-height: 25px;
+        width: 70%;
+    }
+    .carousel__image {
+        width: 100%;
+        height: inherit;
+        object-fit: contain;
+    }
+}
