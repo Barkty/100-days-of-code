@@ -60,7 +60,7 @@ body {
                 justify-content: center;
                 position: relative;
                 width: 100%;
-                height: 290px;
+                height: auto;
                 top: -60%;
                 left: 50%;
                 background-color: $Hover;
@@ -103,6 +103,7 @@ body {
 
         &__body {
             width: 100%;
+            height: auto;
             text-align: left;
             
             &__text {
