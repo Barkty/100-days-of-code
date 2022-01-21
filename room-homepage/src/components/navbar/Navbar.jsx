@@ -18,7 +18,7 @@ const Navbar = () => {
     return (
         <div className={`${styles.navbar__wrapper}`}>
             <div className='container'>
-                <nav className={`${styles.navbar}`}>
+                <nav className={`${styles.navbar}`} role={navigation}>
                     <div className={`${styles.logo}`}>
                         <Link to="/"><Logo /></Link>
                     </div>

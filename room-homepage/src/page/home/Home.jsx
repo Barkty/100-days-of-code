@@ -17,7 +17,7 @@ const Home = () => {
     };
 
     return (
-        <div className={styles.home__wrapper}>
+        <main className={styles.home__wrapper} role={main}>
             <Navbar />
             <Carousel>
                 <CarouselItem>
@@ -26,7 +26,7 @@ const Home = () => {
                             <img src={hero} alt='Design' className={styles.carousel__image}/>
                         </div>
                         <div className={styles.carousel__notes}>
-                            <h2 className={styles.item__title}>Discover innovative<br/>ways to decorate</h2>
+                            <h1 className={styles.item__title}>Discover innovative<br/>ways to decorate</h1>
                             <p className={styles.item__text}>We provide unmatched quality, comfort, <br/>and style for property owners across the country.<br/> Our experts combine form and function in bringing <br/>your vision to life. Create a room in your own <br/>style with our collection and make your property<br/> a reflection of you and what you love.</p>
                             <p className={`${styles.item__link}`}><Link to='/' className={`${styles.item__a} ${hover === "Shop" ? styles.hover : ""}`} onMouseEnter={() => {handleHover('Shop')}}>Shop now <FontAwesomeIcon icon={['fas', 'arrow-right']} className={styles.right}/></Link></p>
                         </div>
@@ -38,7 +38,7 @@ const Home = () => {
                             <img src={heroImg} alt='Design' className={styles.carousel__image}/>
                         </div>
                         <div className={styles.carousel__notes}>
-                            <h2 className={styles.item__title}>We are available<br/> all across the globe</h2>
+                            <h1 className={styles.item__title}>We are available<br/> all across the globe</h1>
                             <p className={styles.item__text}>With stores all over the world, it's easy <br/>for you to find furniture for your home or <br/>place of business. Locally, we’re in most major <br/>cities throughout the country. Find the branch <br/>nearest you using our store locator. <br/>Any questions? Don't hesitate to contact us today.</p>
                             <p className={`${styles.item__link}`}><Link to='/' className={`${styles.item__a} ${hover === "Shop" ? styles.hover : ""}`} onMouseEnter={() => {handleHover('Shop')}}>Shop now <FontAwesomeIcon icon={['fas', 'arrow-right']} className={styles.right}/></Link></p>
                         </div>
@@ -50,14 +50,14 @@ const Home = () => {
                             <img src={heroImage} alt='Design' className={styles.carousel__image}/>
                         </div>
                         <div className={styles.carousel__notes}>
-                            <h2 className={styles.item__title}>Manufactured with <br/>the best materials</h2>
+                            <h1 className={styles.item__title}>Manufactured with <br/>the best materials</h1>
                             <p className={styles.item__text}>Our modern furniture store provide a high level of quality. <br/>Our company has invested in advanced technology to ensure <br/>that every product is made as perfect and as consistent as possible. <br/>With three decades of experience in this industry, we understand <br/>what customers want for their home and office.</p>
                             <p className={`${styles.item__link}`}><Link to='/' className={`${styles.item__a} ${hover === "Shop" ? styles.hover : ""}`} onMouseEnter={() => {handleHover('Shop')}}>Shop now <FontAwesomeIcon icon={['fas', 'arrow-right']} className={styles.right}/></Link></p>
                         </div>
                     </div>
                 </CarouselItem>
             </Carousel>
-            <div className={styles.home__page}>
+            <div className={styles.home__page} role={complementary}>
                 <div className={styles.home__image}>
                     <img alt='About' src={aboutDark} className={styles.about__image}/>
                 </div>
@@ -69,7 +69,7 @@ const Home = () => {
                     <img alt='About' src={aboutLight} className={styles.about__image}/>
                 </div>
             </div>
-        </div>
+        </main>
     );
 }
 
