@@ -7,6 +7,10 @@ fetch('data.json').then(function(res){
     });
 });
 
+var activeDay = false;
+var activeWeek = false;
+var activeMon = 'day';
+
 const fetchData = () => {
 
     const displayDaily = () => {
@@ -23,9 +27,15 @@ const fetchData = () => {
         document.getElementById('selfcare').innerHTML = result[5]['timeframes']['daily']['current'] + 'hrs';
         document.getElementById('selfcarePrev').innerHTML = "Last week - " + result[5]['timeframes']['daily']['previous'] + 'hrs';
         
+        if (activeMon == 'day') {
+            document.getElementById('daily').style.color = 'hsl(236, 100%, 87%)';
+            console.log(activeMon);
+        } else {
+            document.getElementById('daily').style.color = 'hsl(235, 45%, 61%)';
+        }
     }
     var daily = document.getElementById('daily');
-    daily.addEventListener('click', displayDaily);
+    daily.addEventListener('click', displayDaily, activeMon = 'day');
 
     const displayWeekly = () => {
         document.getElementById('work').innerHTML = result[0]['timeframes']['weekly']['current'] + 'hrs';
@@ -40,9 +50,16 @@ const fetchData = () => {
         document.getElementById('socialPrev').innerHTML = "Last week - " + result[4]['timeframes']['weekly']['previous'] + 'hrs';
         document.getElementById('selfcare').innerHTML = result[5]['timeframes']['weekly']['current'] + 'hrs';
         document.getElementById('selfcarePrev').innerHTML = "Last week - " + result[5]['timeframes']['weekly']['previous'] + 'hrs';
+
+        if (activeMon == 'weekly') {
+            document.getElementById('weekly').style.color = 'hsl(236, 100%, 87%)';
+            console.log(activeMon);
+        } else {
+            document.getElementById('weekly').style.color = 'hsl(235, 45%, 61%)';
+        }
     }
     var week = document.getElementById('weekly');
-    week.addEventListener('click', displayWeekly);
+    week.addEventListener('click', displayWeekly, activeMon = 'weekly');
 
     const displayMonthly = () => {
         document.getElementById('work').innerHTML = result[0]['timeframes']['monthly']['current'] + 'hrs';
@@ -57,7 +74,14 @@ const fetchData = () => {
         document.getElementById('socialPrev').innerHTML = "Last week - " + result[4]['timeframes']['monthly']['previous'] + 'hrs';
         document.getElementById('selfcare').innerHTML = result[5]['timeframes']['monthly']['current'] + 'hrs';
         document.getElementById('selfcarePrev').innerHTML = "Last week - " + result[5]['timeframes']['monthly']['previous'] + 'hrs';
+
+        if (activeMon == 'month') {
+            document.getElementById('month').style.color = 'hsl(236, 100%, 87%)';
+            console.log(activeMon);
+        } else {
+            document.getElementById('month').style.color = 'hsl(235, 45%, 61%)';
+        }
     }
     var month = document.getElementById('month');
-    month.addEventListener('click', displayMonthly);
+    month.addEventListener('click', displayMonthly, activeMon = 'month');
 }
