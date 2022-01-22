@@ -14,7 +14,7 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body onload="return fetchData()">
   <div class="Body">
     <div class="Grid" role="main">
       <div class="Grid__report">
@@ -24,9 +24,9 @@
           <p class="Grid__report__author__text">Report for</p>
           <h1 class="Grid__report__author__name">Jeremy <br>Johnson</h1>
         </div>
-        <h1 class="Grid__report__tables">Daily</h1>
-        <h1 class="Grid__report__table">Weekly</h1>
-        <h1 class="Grid__report__table">Monthly</h1>
+        <h1 class="Grid__report__tables" id="daily">Daily</h1>
+        <h1 class="Grid__report__table" id="weekly">Weekly</h1>
+        <h1 class="Grid__report__table" id="month">Monthly</h1>
       </div>
       <!-- <div class="Grid__report"></div> -->
       <div class="Grid__cards">
@@ -40,7 +40,8 @@
             <h2 class="Grid__cards__work--time__title">Work</h2>
             <i class="Grid__cards__work--time__ellip"><img src="/images/icon-ellipsis.svg" alt="ellips"></i>
 
-            <p class="Grid__cards__work--time__hrs">32hrs</p>
+            <p class="Grid__cards__work--time__hrs" id="work">32hrs</p>
+            <p class="Grid__cards__work--time__ltw" id="workPrev">Last week - 36hrs</p>
           </div>
         </div>
         <div class="Grid__cards__play">
@@ -52,6 +53,9 @@
           <div class="Grid__cards__work--time">
             <h2 class="Grid__cards__work--time__title">Play</h2>
             <i class="Grid__cards__work--time__ellip"><img src="/images/icon-ellipsis.svg" alt="ellips"></i>
+
+            <p class="Grid__cards__work--time__hrs">10hrs</p>
+            <p class="Grid__cards__work--time__ltw">Last week - 8hrs</p>
           </div>
         </div>
         <div class="Grid__cards__study">
@@ -63,6 +67,9 @@
           <div class="Grid__cards__work--time">
             <h2 class="Grid__cards__work--time__title">Study</h2>
             <i class="Grid__cards__work--time__ellip"><img src="/images/icon-ellipsis.svg" alt="ellips"></i>
+
+            <p class="Grid__cards__work--time__hrs">4hrs</p>
+            <p class="Grid__cards__work--time__ltw">Last week - 7hrs</p>
           </div>
         </div>
         <div class="Grid__cards__exercise">
@@ -74,6 +81,9 @@
           <div class="Grid__cards__work--time">
             <h2 class="Grid__cards__work--time__title">Exercise</h2>
             <i class="Grid__cards__work--time__ellip"><img src="/images/icon-ellipsis.svg" alt="ellips"></i>
+
+            <p class="Grid__cards__work--time__hrs">4hrs</p>
+            <p class="Grid__cards__work--time__ltw">Last week - 5hrs</p>
           </div>
         </div>
         <div class="Grid__cards__social">
@@ -85,6 +95,9 @@
           <div class="Grid__cards__work--time">
             <h2 class="Grid__cards__work--time__title">Social</h2>
             <i class="Grid__cards__work--time__ellip"><img src="/images/icon-ellipsis.svg" alt="ellips"></i>
+
+            <p class="Grid__cards__work--time__hrs">5hrs</p>
+            <p class="Grid__cards__work--time__ltw">Last week - 10hrs</p>
           </div>
         </div>
         <div class="Grid__cards__selfcare">
@@ -96,14 +109,19 @@
           <div class="Grid__cards__work--time">
             <h2 class="Grid__cards__work--time__title">Selfcare</h2>
             <i class="Grid__cards__work--time__ellip"><img src="/images/icon-ellipsis.svg" alt="ellips"></i>
+
+            <p class="Grid__cards__work--time__hrs">2hrs</p>
+            <p class="Grid__cards__work--time__ltw">Last week - 2hrs</p>
           </div>
         </div>
       </div>
     </div>
     <div class="attribution" role="contentinfo">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://www.github.com/Barkty">Gbemisola</a>.
     </div>
   </div>
+
+  <script src="/js/store.js"></script>
 </body>
 </html>

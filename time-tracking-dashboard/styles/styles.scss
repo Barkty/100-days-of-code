@@ -140,6 +140,26 @@ body {
                     color: hsl(236, 100%, 87%);
                     cursor: pointer;
                 }
+
+                &__hrs {
+                    font-family: 'Rubik';
+                    font-size: 58px;
+                    font-weight: 300;
+                    color: whitesmoke;
+                    position: relative;
+                    top: -80px;
+                    left: 20px;
+                }
+
+                &__ltw {
+                    font-family: 'Rubik';
+                    font-size: 18px;
+                    font-weight: 300;
+                    color: hsl(236, 100%, 87%);
+                    position: relative;
+                    top: -130px;
+                    left: 20px;
+                }
             }
 
             &--time:hover {

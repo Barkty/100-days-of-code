@@ -167,6 +167,26 @@ body {
   cursor: pointer;
 }
 
+.Grid__cards__work--time__hrs {
+  font-family: 'Rubik';
+  font-size: 58px;
+  font-weight: 300;
+  color: whitesmoke;
+  position: relative;
+  top: -80px;
+  left: 20px;
+}
+
+.Grid__cards__work--time__ltw {
+  font-family: 'Rubik';
+  font-size: 18px;
+  font-weight: 300;
+  color: #bdc1ff;
+  position: relative;
+  top: -130px;
+  left: 20px;
+}
+
 .Grid__cards__work--time:hover {
   background-color: #6f76c8;
   cursor: pointer;
