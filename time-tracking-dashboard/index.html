@@ -14,7 +14,7 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body onload="return fetchData()">
   <div class="Body">
     <div class="Grid" role="main">
       <div class="Grid__report">
@@ -24,7 +24,7 @@
           <p class="Grid__report__author__text">Report for</p>
           <h1 class="Grid__report__author__name">Jeremy <br>Johnson</h1>
         </div>
-        <h1 class="Grid__report__tables" id="daily" onclick="return fetchData()">Daily</h1>
+        <h1 class="Grid__report__tables" id="daily">Daily</h1>
         <h1 class="Grid__report__table" id="weekly">Weekly</h1>
         <h1 class="Grid__report__table" id="month">Monthly</h1>
       </div>
