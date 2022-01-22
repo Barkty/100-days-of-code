@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    //border-radius: 15px;
 }
 body {
     padding: 0;
@@ -21,11 +22,250 @@ body {
 }
 .Grid {
     display: grid;
-    gap: 30px;
-    grid-template-columns: 220px 220px 220px 220px;
-    grid-template-rows: 180px 180px;
+    column-gap: 30px;
+    grid-template-columns: 200px 600px;
+    grid-template-rows: 440px;
 
     &__report {
+        display: grid;
+        row-gap: 0;
+        grid-template-rows: 290px 220px;
         background-color: hsl(235, 46%, 20%);
+        border-radius: 15px;
+        z-index: 3;
+
+        &__author {
+            background-color: hsl(246, 80%, 60%);
+            border-radius: 15px;
+
+            &__image {
+                width: 50px;
+                border: 2px solid whitesmoke;
+                border-radius: 50px;
+                margin: 30px 0 20px 20px;
+            }
+
+            &__text {
+                font-family: 'Rubik';
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 15px;
+                color: hsl(235, 45%, 61%);
+                margin-bottom: -20px;
+                margin-left: 20px;
+            }
+
+            &__name {
+                font-family: 'Rubik';
+                font-weight: 500;
+                font-size: 32px;
+                color: hsl(236, 100%, 87%);
+                margin-left: 20px;
+            }
+        }
+
+        &__tables {
+            color: hsl(235, 45%, 61%);
+            font-family: 'Rubik';
+            font-weight: 400;
+            font-size: 15px;
+            margin-left: 30px;
+            height: 20px;
+        }
+
+        &__table {
+            color: hsl(235, 45%, 61%);
+            font-family: 'Rubik';
+            font-weight: 400;
+            font-size: 15px;
+            margin-left: 30px;
+            position: relative;
+            top: -180px;
+        }
+
+        &__table:hover, &__tables:hover {
+            color: hsl(236, 100%, 87%);
+            cursor: pointer;
+        }
+
+    }
+
+    &__cards {
+        display: inline-grid;
+        gap: 30px;
+        grid-template-columns: 190px 190px 190px;
+        grid-template-rows: 200px 200px;
+
+        &__work {
+            display: grid;
+            row-gap: 0;
+            grid-template-rows: 40px 170px;
+            background-color: hsl(15, 100%, 70%); //just a farce
+            border-radius: 15px;
+
+            &--work {
+                background-color: hsl(15, 100%, 70%);
+                border-radius: 15px;
+
+                &__svg {
+                    position: relative;
+                    left: 100px;
+                    top: 0;
+                }
+            }
+            &--time {
+                background-color: hsl(235, 46%, 20%);
+                border-radius: 15px;
+                z-index: 2;
+
+                &__title {
+                    font-family: 'Rubik';
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: hsl(236, 100%, 87%);
+                    margin-left: 20px;
+                }
+
+                &__ellip {
+                    font-family: 'Rubik';
+                    font-size: 10px;
+                    font-weight: 600;
+                    color: hsl(235, 45%, 61%);
+                    position: relative;
+                    top: -35px;
+                    left: 140px;
+                }
+
+                &__ellip:hover {
+                    color: hsl(236, 100%, 87%);
+                    cursor: pointer;
+                }
+            }
+
+            &--time:hover {
+                background-color: hsl(235, 45%, 61%);
+                cursor: pointer;
+            }
+        }
+
+        &__play {
+            display: grid;
+            row-gap: 0;
+            grid-template-rows: 40px 170px;
+            background-color: hsl(195, 74%, 62%);
+            border-radius: 15px;
+
+            &--play {
+                background-color: hsl(195, 74%, 62%);
+                border-radius: 15px;
+
+                &__svg {
+                    position: relative;
+                    left: 100px;
+                    top: 0;
+                }
+            }
+            &--time {
+                background-color: hsl(235, 46%, 20%);
+                border-radius: 15px;
+                z-index: 2;
+            }
+        }
+
+        &__study {
+            display: grid;
+            row-gap: 0;
+            grid-template-rows: 40px 170px;
+            background-color: hsl(348, 100%, 68%);
+            border-radius: 15px;
+
+            &--study {
+                background-color: hsl(348, 100%, 68%);
+                border-radius: 15px;
+
+                &__svg {
+                    position: relative;
+                    left: 100px;
+                    top: 0;
+                }
+            }
+            &--time {
+                background-color: hsl(235, 46%, 20%);
+                border-radius: 15px;
+                z-index: 2;
+            }
+        }
+
+        &__exercise {
+            display: grid;
+            row-gap: 0;
+            grid-template-rows: 40px 170px;
+            background-color: hsl(145, 58%, 55%);
+            border-radius: 15px;
+
+            &--exercise {
+                background-color: hsl(145, 58%, 55%);
+                border-radius: 15px;
+
+                &__svg {
+                    position: relative;
+                    left: 100px;
+                    top: 0;
+                }
+            }
+            &--time {
+                background-color: hsl(235, 46%, 20%);
+                border-radius: 15px;
+                z-index: 2;
+            }
+        }
+
+        &__social {
+            display: grid;
+            row-gap: 0;
+            grid-template-rows: 40px 170px;
+            background-color: hsl(264, 64%, 52%);
+            border-radius: 15px;
+
+            &--social {
+                background-color: hsl(264, 64%, 52%);
+                border-radius: 15px;
+
+                &__svg {
+                    position: relative;
+                    left: 100px;
+                    top: 0;
+                }
+            }
+            &--time {
+                background-color: hsl(235, 46%, 20%);
+                border-radius: 15px;
+                z-index: 2;
+            }
+        }
+
+        &__selfcare {
+            display: grid;
+            row-gap: 0;
+            grid-template-rows: 40px 170px;
+            background-color: hsl(43, 84%, 65%);
+            border-radius: 15px;
+
+            &--selfcare {
+                background-color: hsl(43, 84%, 65%);                ;
+                border-radius: 15px;
+
+                &__svg {
+                    position: relative;
+                    left: 100px;
+                    top: 0;
+                }
+            }
+            &--time {
+                background-color: hsl(235, 46%, 20%);
+                border-radius: 15px;
+                z-index: 2;
+            }
+        }
     }
 }
