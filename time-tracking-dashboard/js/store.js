@@ -29,7 +29,7 @@ const fetchData = () => {
         
         if (activeDay == 'day') {
             document.getElementById('daily').style.color = 'hsl(236, 100%, 87%)';
-            console.log(activeDay);
+            //console.log(activeDay);
         } else {
             document.getElementById('daily').style.color = 'hsl(235, 45%, 61%)';
         }
@@ -53,7 +53,7 @@ const fetchData = () => {
 
         if (activeWeek == 'weekly') {
             document.querySelector('#weekly').style.color = 'hsl(236, 100%, 87%)';
-            console.log(activeWeek);
+            //console.log(activeWeek);
         } else {
             document.querySelector('#weekly').style.color = 'hsl(235, 45%, 61%)';
         }
@@ -77,7 +77,7 @@ const fetchData = () => {
 
         if (activeMon == 'month') {
             document.querySelector('#month').style.color = 'hsl(236, 100%, 87%)';
-            console.log(activeMon);
+            //console.log(activeMon);
         } else {
             document.querySelector('#month').style.color = 'hsl(235, 45%, 61%)';
         }
