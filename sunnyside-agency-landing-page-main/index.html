@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
-
+  <link rel="stylesheet" href="/styles/styles.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -15,54 +15,56 @@
   </style>
 </head>
 <body>
-  About
-  Services
-  Projects
-  Contact
-
-  We are creatives
-
-  Transform your brand
-
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
-
-  Learn more
-
-  Stand out to the right audience
-
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
-
-  Learn more
-
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-
-  Client testimonials
-
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
-
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
-
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
-
-  About
-  Services
-  Projects
-  Contact
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <nav class="nav" role="navigation">
+    <div class="nav__logo">
+      <img src="/images/logo.svg" alt="logo" class="nav__logo__image">
+    </div>
+    <ul class="nav__items">
+      <li class="nav__items__link">
+        <a href="#about">About</a>
+      </li>
+      <li class="nav__items__link">
+        <a href="#services">Services</a>
+      </li>
+      <li class="nav__items__link">
+        <a href="#pictures">Pictures</a>
+      </li>
+      <button class="nav__items__button" type="button">
+        <a href="#contact" role="button" class="nav__items__link--btn">Contact</a>
+      </button>
+    </ul>
+  </nav>
+  <div class="header" role="banner">
+    <h1 class="header__text">We are creatives</h1>
+    <i class="header__icon">
+      <img src="/images/icon-arrow-down.svg" alt="Down">
+    </i>
+  </div>
+  <div class="content" role="main">
+    <div class="content__transform">
+      <h2 class="content__transform__title">Transform your brand</h2>
+      <p class="content__transform__text">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+      <a href="/" class="content__transform__link">Learn more</a> 
+    </div>
+    <div class="content__image"></div>
+    <div class="content__stand"></div>
+    <div class="content__transform">
+      <h2 class="content__transform__title">Stand out to the right audience</h2>
+      <p class="content__transform__text">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
+      <a href="/" class="content__transform__link">Learn more</a> 
+    </div>
+    <div class="content__graphic">
+      <h2 class="content__graphic__title">Graphic design</h2>
+      <p class="content__graphic__text">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+      </p>
+    </div>
+    <div class="content__photo"></div>
+  </div>
+  <div role="contentinfo" class="footer">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
   </div>
 </body>
 </html>

@@ -1,0 +1,213 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Barlow';
+}
+
+body .nav {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 3;
+}
+
+body .nav__logo {
+  width: 8%;
+  height: 40px;
+  margin-left: 35px;
+  cursor: pointer;
+}
+
+body .nav__logo__image {
+  width: 100%;
+  height: 100%;
+}
+
+body .nav__items {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style-type: none;
+  width: 45%;
+  height: 100%;
+}
+
+body .nav__items__link {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+body .nav__items__link a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+body .nav__items__button {
+  width: 150px;
+  height: 40px;
+  background-color: white;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+body .nav__items__button a {
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+
+body .header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/images/desktop/image-header.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -3;
+}
+
+body .header__text {
+  color: white;
+  font-size: 40px;
+  line-height: 25px;
+  letter-spacing: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 200px;
+}
+
+body .header__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .content {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  gap: 0;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 450px 450px 450px;
+      grid-template-rows: 450px 450px 450px;
+  position: relative;
+  top: 620px;
+  left: 0;
+}
+
+body .content__transform {
+  background-color: inherit;
+  padding: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body .content__transform__title {
+  font-weight: 700;
+  font-family: 'Fraunces';
+  font-size: 44px;
+  letter-spacing: 2px;
+  color: black;
+}
+
+body .content__transform__text {
+  font-family: 'Fraunces';
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+
+body .content__transform__link {
+  font-family: 'Fraunces';
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: 2px solid #fad400;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+
+body .content__image {
+  background-image: url("/images/desktop/image-transform.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body .content__stand {
+  background-image: url("/images/desktop/image-stand-out.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body .content__graphic {
+  background-image: url("/images/desktop/image-graphic-design.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body .content__graphic__text {
+  font-family: 'Barlow';
+  font-weight: 800;
+  color: black;
+}
+
+body .content__photo {
+  background-image: url("/images/desktop/image-photography.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body .footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+/*# sourceMappingURL=styles.css.map */
