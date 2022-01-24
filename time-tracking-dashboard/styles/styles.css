@@ -68,10 +68,10 @@ body {
 .Grid__report__author__text {
   font-family: 'Rubik';
   font-weight: 300;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 18px;
+  line-height: 19px;
   color: #6f76c8;
-  margin-bottom: -20px;
+  margin-bottom: -10px;
   margin-left: 20px;
 }
 
@@ -100,6 +100,17 @@ body {
   margin-left: 30px;
   position: relative;
   top: -180px;
+}
+
+.Grid__report__table--mon {
+  color: #6f76c8;
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 15px;
+  margin-left: 30px;
+  position: relative;
+  top: -173px;
+  left: 0px;
 }
 
 .Grid__report__table:hover, .Grid__report__tables:hover {
@@ -390,11 +401,12 @@ body {
   .Grid__report__author__name {
     font-family: 'Rubik';
     font-weight: 500;
-    font-size: 18px;
+    font-size: 15px;
     color: #bdc1ff;
+    margin-left: 0;
     position: relative;
     top: -60px;
-    left: 50px;
+    left: 70px;
   }
   .Grid__report__author__name--br {
     display: none;
