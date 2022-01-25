@@ -28,6 +28,10 @@ body {
             }
         }
 
+        &__menu__btn {
+            display: none;
+        }
+
         &__items {
             display: inline-flex;
             align-items: center;
@@ -413,4 +417,454 @@ body {
             }
         }
     }
+}
+
+@media (max-width: 380px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Barlow';
+
+        .nav {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 3;
+    
+            &__logo {
+                width: 20%;
+                height: 40px;
+                margin-left: 35px;
+                cursor: pointer;
+    
+                &__image {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+    
+            &__menu__btn {
+                display: block;
+                outline: none;
+                border: none;
+                width: 70px;
+                height: 50px;
+                background-color: inherit;
+                position: relative;
+                right: 30px;
+            }
+
+            &__close {
+                display: none;
+            }
+
+            &__items {
+                display: inline-flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                list-style-type: none;
+                width: 100%;
+                height: 400px;
+                background-color: hsl(0, 0%, 100%);
+                position: relative;
+                top: 230px;
+                left: -10px;
+                z-index: 2;
+
+                &__link {
+                    color: hsl(213, 9%, 39%);
+                    font-size: 18px;
+                    font-weight: 600;
+                    font-family: 'Barlow';
+                    margin-left: -40px;
+    
+                    a {
+                        text-decoration: none;
+                        color: hsl(213, 9%, 39%);
+                        cursor: pointer;
+                    }
+                }
+    
+                &__button {
+                    width: 150px;
+                    height: 40px;
+                    background-color: hsl(51, 100%, 49%);
+                    border-radius: 20px;
+                    outline: none;
+                    border: none;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    margin-left: -40px;
+    
+                    a {
+                        font-family: 'Barlow';
+                        font-weight: 500;
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+        
+        .header {
+            width: 100%;
+            height: 100vh;
+            background-image: url('/images/mobile/image-header.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -3;
+    
+            &__text {
+                color: hsl(0, 0%, 100%);
+                font-family: 'Fraunces';
+                font-size: 40px;
+                line-height: 45px;
+                letter-spacing: 12px;
+                text-align: center;
+                text-transform: uppercase;
+                margin-top: 160px;
+            }
+    
+            &__icon {
+                display: flex;
+                justify-content: center;
+                position: relative;
+                top: 80px;
+                z-index: 2;
+            }
+        }
+
+        .content {
+            width: 100%;
+            height: auto;
+            display: grid;
+            gap: 0;
+            grid-template-columns: 100%;
+            grid-template-rows: 450px 450px 450px 450px 450px 450px;
+            position: relative;
+            top: 560px;
+            left: 0;
+    
+            &__transform {
+                background-color: inherit;
+                padding: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                grid-row: 2;
+    
+                &__title {
+                    font-weight: 700;
+                    font-family: 'Fraunces';
+                    font-size: 34px;
+                    letter-spacing: 2px;
+                    color: hsl(212, 27%, 19%);
+                }
+    
+                &__text {
+                    font-family: 'Barlow';
+                    font-size: 18px;
+                    font-weight: normal;
+                    line-height: 26px;
+                    letter-spacing: 2px;
+                    color: hsl(232, 10%, 55%);
+                }
+    
+                &__link {
+                    font-family: 'Fraunces';
+                    font-size: 20px;
+                    font-weight: 700;
+                    border-bottom: 4px solid hsl(51, 100%, 49%);
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: hsl(212, 27%, 19%);
+                }
+            }
+    
+            &__image {
+                background-image: url('/images/mobile/image-transform.jpg');
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                grid-row: 1;
+            }
+    
+            &__standout {
+                background-color: inherit;
+                padding: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                grid-row: 4;
+            }
+
+            &__stand {
+                background-image: url('/images/mobile/image-stand-out.jpg');
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                grid-row: 3;
+    
+                &__link {
+                    font-family: 'Fraunces';
+                    font-size: 20px;
+                    font-weight: 700;
+                    border-bottom: 4px solid hsl(7, 99%, 70%);
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: hsl(212, 27%, 19%);
+                }
+            }
+    
+            &__graphic {
+                background-image: url('/images/mobile/image-graphic-design.jpg');
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                padding: 50px 50px 0;
+                grid-row: 5;
+                
+                &__title {
+                    font-family: 'Fraunces';
+                    font-weight: 800;
+                    color: hsl(167, 40%, 24%);
+                    text-align: center;
+                    position: relative;
+                    bottom: -170px;
+                }
+    
+                &__text {
+                    font-family: 'Barlow';
+                    font-size: 15px;
+                    font-weight: normal;
+                    line-height: 30px;
+                    text-align: center;
+                    color: hsl(167, 40%, 24%);
+                    position: relative;
+                    bottom: -170px;
+                }
+            }
+    
+            &__photo {
+                background-image: url('/images/mobile/image-photography.jpg');
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                padding: 50px 50px 0;
+                grid-row: 6;
+    
+                &__title {
+                    font-family: 'Fraunces';
+                    font-weight: 800;
+                    color: hsl(198, 62%, 26%);
+                    text-align: center;
+                    position: relative;
+                    bottom: -160px;
+                }
+                
+                &__text {
+                    font-family: 'Barlow';
+                    font-size: 15px;
+                    font-weight: normal;
+                    line-height: 30px;
+                    text-align: center;
+                    color: hsl(198, 62%, 26%);
+                    position: relative;
+                    bottom: -170px;
+                }
+            }
+        }
+
+        .testimony {
+            width: 100%;
+            height: 100vh;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: 960px;
+            left: 0;
+    
+            &__title {
+                font-family: 'Fraunces';
+                text-align: center;
+                color: hsl(210, 4%, 67%);
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                line-height: 30px;
+                position: relative;
+                top: -50px;
+            }
+    
+            &__grid {
+                width: 90%;
+                display: grid;
+                row-gap: 20px;
+                grid-template-columns: 100%;
+                grid-template-rows: 400px 400px 400px;
+    
+                &__cell {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+    
+                    &__image {
+                        border-radius: 50px;
+                        width: 100px;
+                    }
+    
+                    &__test {
+                        font-family: 'Barlow';
+                        font-size: 22px;
+                        font-weight: normal;
+                        line-height: 29px;
+                        color: hsl(232, 10%, 55%);
+                        text-align: center;
+                    }
+    
+                    &__name {
+                        font-family: 'Fraunces';
+                        font-size: 22px;
+                        font-weight: 600;
+                        line-height: 29px;
+                        color: hsl(212, 27%, 19%);
+                        text-align: center;
+                    }
+    
+                    &__post {
+                        font-family: 'Barlow';
+                        font-size: 22px;
+                        font-weight: normal;
+                        line-height: 29px;
+                        color: hsl(232, 10%, 55%);
+                        text-align: center;
+                        // margin-top: -10px;
+                    }
+                }
+            }
+        }
+
+        .gallery {
+            width: 100%;
+            height: 800px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            position: relative;
+            top: 1230px;
+    
+            &__image--f {
+                width: 50%;
+                height: 300px;
+                background-image: url('/images/mobile/image-gallery-milkbottles.jpg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+            }
+    
+            &__image--s {
+                width: 50%;
+                height: 300px;
+                background-image: url('/images/mobile/image-gallery-orange.jpg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+            }
+    
+            &__image--t {
+                width: 50%;
+                height: 300px;
+                background-image: url('/images/mobile/image-gallery-cone.jpg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+            }
+    
+            &__image--l {
+                width: 50%;
+                height: 300px;
+                background-image: url('/images/mobile/image-gallery-sugar-cubes.jpg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+            }
+        }
+
+        .footer {
+            width: 100%;
+            height: 350px;
+            background-color: hsl(167, 43%, 70%);
+            position: relative;
+            bottom: -1130px;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+    
+            &__logo {
+                margin-bottom: 30px;
+            }
+            &__items {
+                display: inline-flex;
+                align-items: center;
+                justify-content: space-evenly;
+                list-style-type: none;
+                width: 95%;
+    
+                &__link {
+                    color: hsl(168, 34%, 41%);
+                    font-size: 18px;
+                    font-weight: 600;
+                    font-family: 'Barlow';
+    
+                    a {
+                        text-decoration: none;
+                        color: hsl(168, 34%, 41%);
+                        cursor: pointer;
+                    }
+                }
+            }
+    
+            &__icons {
+                display: inline-flex;
+                align-items: center;
+                justify-items: center;
+                justify-content: center;
+                list-style-type: none;
+                width: 45%;
+                position: relative;
+                bottom: -30px;
+    
+                &__link {
+                    margin-right: 18px;
+                }
+            }
+    
+            &__attribution { 
+                font-size: 11px; 
+                text-align: center; 
+                position: relative;
+                bottom: -60px;
+    
+                a {
+                    text-decoration: none;
+                    color: hsl(168, 34%, 41%);
+                    cursor: pointer;
+                }
+            }
+        }
+    }   
 }
