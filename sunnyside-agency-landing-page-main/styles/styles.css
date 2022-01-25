@@ -41,7 +41,7 @@ body .nav__menu__btn {
   display: none;
 }
 
-body .nav__items {
+body .nav__item {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -56,20 +56,20 @@ body .nav__items {
   height: 100%;
 }
 
-body .nav__items__link {
+body .nav__item__link {
   color: white;
   font-size: 18px;
   font-weight: 600;
   font-family: 'Barlow';
 }
 
-body .nav__items__link a {
+body .nav__item__link a {
   text-decoration: none;
   color: white;
   cursor: pointer;
 }
 
-body .nav__items__button {
+body .nav__item__button {
   width: 150px;
   height: 40px;
   background-color: white;
@@ -80,7 +80,7 @@ body .nav__items__button {
   text-transform: uppercase;
 }
 
-body .nav__items__button a {
+body .nav__item__button a {
   font-family: 'Barlow';
   font-weight: 500;
   text-decoration: none;
