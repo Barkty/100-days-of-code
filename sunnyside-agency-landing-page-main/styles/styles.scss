@@ -152,6 +152,15 @@ body {
             }
         }
 
+        &__standout {
+            background-color: inherit;
+            padding: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
         &__image {
             background-image: url('/images/desktop/image-transform.jpg');
             background-position: center center;
