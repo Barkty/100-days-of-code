@@ -56,7 +56,7 @@
 }
 
 .main__calculator__form__group {
-  width: inherit;
+  width: 100%;
   height: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,8 +134,8 @@
   padding: 25px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 265px;
-      grid-template-columns: 265px;
+  -ms-grid-columns: 295px;
+      grid-template-columns: 295px;
   -ms-grid-rows: 50px 50px 40px;
       grid-template-rows: 50px 50px 40px;
   row-gap: 30px;
