@@ -121,7 +121,7 @@
             padding: 25px;
             display: grid;
             grid-template-columns: 265px;
-            grid-template-rows: 50px 50px 50px;
+            grid-template-rows: 50px 50px 40px;
             row-gap: 30px;
 
             &__amount {
@@ -162,7 +162,16 @@
                 color: hsla(172, 66%, 36%, 1);
             }
 
-            
+            &__btn {
+                border-radius: 10px;
+                border: none;
+                outline: none;
+                background-color: hsla(172, 66%, 45%, 1);
+                font-family: 'Space Mono';
+                font-size: 20px;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
         }
 
     }

@@ -136,8 +136,8 @@
   display: grid;
   -ms-grid-columns: 265px;
       grid-template-columns: 265px;
-  -ms-grid-rows: 50px 50px 50px;
-      grid-template-rows: 50px 50px 50px;
+  -ms-grid-rows: 50px 50px 40px;
+      grid-template-rows: 50px 50px 40px;
   row-gap: 30px;
 }
 
@@ -192,6 +192,17 @@
 .main__calculator__reset__input::placeholder {
   font-size: 24px;
   color: #1f9888;
+}
+
+.main__calculator__reset__btn {
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #27beaa;
+  font-family: 'Space Mono';
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .attribution {

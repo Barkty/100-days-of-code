@@ -43,7 +43,7 @@ const Calculator = () => {
                         <h3 className='main__calculator__reset__person'>/ person</h3>
                         <input type='text' className='main__calculator__reset__input' placeholder='$0.00' readOnly/>
                     </div>
-                    <button type="reset">Reset</button>
+                    <button type="reset" className='main__calculator__reset__btn'>Reset</button>
                 </div>
             </section>
             <div class="attribution">
