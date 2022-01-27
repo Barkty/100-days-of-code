@@ -1,4 +1,171 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
 
-.attribution { font-size: 11px; text-align: center; }
+// Mobile first as default
+* {
+    box-sizing: border-box;
+}
+.main {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -19px;
+    background-color: hsl(185, 41%, 84%);
+
+    &__header {
+        font-family: 'Space Mono', sans-serif;
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: 5px;
+        color: hsl(186, 14%, 43%);
+        text-transform: uppercase;
+        position: relative;
+        top: 40px;
+    }
+
+    &__calculator {
+        background-color: hsl(0, 0%, 100%);
+        width: 99.5%;
+        height: auto;
+        display: grid;
+        grid-template-rows: 350px 250px;
+        grid-template-columns: auto;
+        row-gap: 80px;
+        padding: 30px;
+        position: relative;
+        top: 50px;
+        left: 1px;
+        border-radius: 15px;
+
+        &__form {
+            grid-row: 1;
+
+            &__title {
+                text-align: left;
+                font-family: 'Space Mono';
+                font-weight: 700;
+                color: hsla(174, 5%, 60%, 1);
+            }
+
+            &__group {
+                width: inherit;
+                height: 35px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 15px 0 15px;
+                background-color: hsl(202, 50%, 97%);
+                border-radius: 4px;
+
+                &__dollar {
+                    width: 15px;
+                    height: 20px;
+                }
+
+                &__input {
+                    height: inherit;
+                    width: 250px;
+                    border: none;
+                    outline: none;
+                    background-color: inherit;
+                    direction: rtl;
+                    font-family: 'Space Mono';
+                    font-size: 24px;
+                    color: hsla(179, 46%, 18%, 1);
+                }
+            }
+
+            &__btn {
+                width: inherit;
+                height: auto;
+
+                &__title {
+                    font-family: 'Space Mono';
+                    font-weight: 700;
+                    text-align: left;
+                    color: hsla(174, 5%, 60%, 1);
+                }
+            }
+
+            &__button {
+                display: grid;
+                grid-template-columns: 46.5% 46.5%;
+                grid-template-rows: 35px 35px 35px;
+                gap: 20px;
+                width: 100%;
+
+                button {
+                    background-color: hsla(183, 100%, 12%, 1);
+                    border: none;
+                    outline: none;
+                    border-radius: 5px;
+                    font-family: 'Space Mono';
+                    font-size: 18px;
+                    font-weight: 700;
+                    color:  hsl(0, 0%, 100%);
+                }
+
+                button:last-child {
+                    color: hsla(174, 5%, 60%, 1);
+                    background-color: hsla(180, 33%, 96%, 1);
+                }
+            }
+
+            
+        }
+
+        &__reset {
+            background: hsla(183, 100%, 12%, 1);
+            border-radius: 10px;
+            padding: 25px;
+            display: grid;
+            grid-template-columns: 265px;
+            grid-template-rows: 50px 50px 50px;
+            row-gap: 30px;
+
+            &__amount {
+                text-align: left;
+                font-family: 'Space Mono';
+                font-size: 18px;
+                color:  hsl(0, 0%, 100%);
+                position: relative;
+                top: -20px;
+            }
+
+            &__person {
+                text-align: left;
+                font-family: 'Space Mono';
+                font-size: 18px;
+                color: hsla(174, 5%, 60%, 1);
+                position: relative;
+                top: -38px;
+            }
+
+            &__input {
+                width: 150px;
+                height: 50px;
+                position: relative;
+                top: -107px;
+                right: -57px;
+                direction: rtl;
+                border: none;
+                outline: none;
+                background: inherit;
+                font-family: 'Space Mono';
+                font-size: 24px;
+                color: hsla(172, 66%, 36%, 1);
+            }
+            
+            &__input::placeholder {
+                font-size: 24px;
+                color: hsla(172, 66%, 36%, 1);
+            }
+
+            
+        }
+
+    }
+}
+.attribution { font-family: 'Space Mono'; font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

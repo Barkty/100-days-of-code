@@ -1,1 +1,206 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: -19px;
+  background-color: #c5e4e7;
+}
+
+.main__header {
+  font-family: 'Space Mono', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  color: #5e7a7d;
+  text-transform: uppercase;
+  position: relative;
+  top: 40px;
+}
+
+.main__calculator {
+  background-color: white;
+  width: 99.5%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 350px 250px;
+      grid-template-rows: 350px 250px;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  row-gap: 80px;
+  padding: 30px;
+  position: relative;
+  top: 50px;
+  left: 1px;
+  border-radius: 15px;
+}
+
+.main__calculator__form {
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.main__calculator__form__title {
+  text-align: left;
+  font-family: 'Space Mono';
+  font-weight: 700;
+  color: #949e9d;
+}
+
+.main__calculator__form__group {
+  width: inherit;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 15px 0 15px;
+  background-color: #f4f8fb;
+  border-radius: 4px;
+}
+
+.main__calculator__form__group__dollar {
+  width: 15px;
+  height: 20px;
+}
+
+.main__calculator__form__group__input {
+  height: inherit;
+  width: 250px;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  direction: rtl;
+  font-family: 'Space Mono';
+  font-size: 24px;
+  color: #194342;
+}
+
+.main__calculator__form__btn {
+  width: inherit;
+  height: auto;
+}
+
+.main__calculator__form__btn__title {
+  font-family: 'Space Mono';
+  font-weight: 700;
+  text-align: left;
+  color: #949e9d;
+}
+
+.main__calculator__form__button {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 46.5% 46.5%;
+      grid-template-columns: 46.5% 46.5%;
+  -ms-grid-rows: 35px 35px 35px;
+      grid-template-rows: 35px 35px 35px;
+  gap: 20px;
+  width: 100%;
+}
+
+.main__calculator__form__button button {
+  background-color: #003a3d;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-family: 'Space Mono';
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+
+.main__calculator__form__button button:last-child {
+  color: #949e9d;
+  background-color: #f1f8f8;
+}
+
+.main__calculator__reset {
+  background: #003a3d;
+  border-radius: 10px;
+  padding: 25px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 265px;
+      grid-template-columns: 265px;
+  -ms-grid-rows: 50px 50px 50px;
+      grid-template-rows: 50px 50px 50px;
+  row-gap: 30px;
+}
+
+.main__calculator__reset__amount {
+  text-align: left;
+  font-family: 'Space Mono';
+  font-size: 18px;
+  color: white;
+  position: relative;
+  top: -20px;
+}
+
+.main__calculator__reset__person {
+  text-align: left;
+  font-family: 'Space Mono';
+  font-size: 18px;
+  color: #949e9d;
+  position: relative;
+  top: -38px;
+}
+
+.main__calculator__reset__input {
+  width: 150px;
+  height: 50px;
+  position: relative;
+  top: -107px;
+  right: -57px;
+  direction: rtl;
+  border: none;
+  outline: none;
+  background: inherit;
+  font-family: 'Space Mono';
+  font-size: 24px;
+  color: #1f9888;
+}
+
+.main__calculator__reset__input::-webkit-input-placeholder {
+  font-size: 24px;
+  color: #1f9888;
+}
+
+.main__calculator__reset__input:-ms-input-placeholder {
+  font-size: 24px;
+  color: #1f9888;
+}
+
+.main__calculator__reset__input::-ms-input-placeholder {
+  font-size: 24px;
+  color: #1f9888;
+}
+
+.main__calculator__reset__input::placeholder {
+  font-size: 24px;
+  color: #1f9888;
+}
+
+.attribution {
+  font-family: 'Space Mono';
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=index.css.map */
