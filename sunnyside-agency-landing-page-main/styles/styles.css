@@ -134,7 +134,7 @@ body .content {
   -ms-grid-rows: 450px 450px 450px;
       grid-template-rows: 450px 450px 450px;
   position: relative;
-  top: 620px;
+  top: 650px;
   left: 0;
 }
 
