@@ -23,7 +23,7 @@ const Calculator = () => {
                             <button type='button'>15%</button>
                             <button type='button'>25%</button>
                             <button type='button'>50%</button>
-                            <button type='button'>Custom</button>
+                            <input type='text' placeholder='Custom'/>
                         </div>
                     </div>
                     <h3 className="main__calculator__form__title">Number of People</h3>
@@ -33,14 +33,18 @@ const Calculator = () => {
                     </div>
                 </div>
                 <div className="main__calculator__reset">
-                    <div>
-                        <h3 className='main__calculator__reset__amount'>Tip Amount</h3>
-                        <h3 className='main__calculator__reset__person'>/ person</h3>
+                    <div className="main__calculator__reset__item">
+                        <div className="main__calculator__reset__item__flex">
+                            <h3 className='main__calculator__reset__amount'>Tip Amount</h3>
+                            <h3 className='main__calculator__reset__person'>/ person</h3>
+                        </div>
                         <input type='text' className='main__calculator__reset__input' placeholder='$0.00' readOnly/>
                     </div>
-                    <div>
-                        <h3 className='main__calculator__reset__amount'>Total</h3>
-                        <h3 className='main__calculator__reset__person'>/ person</h3>
+                    <div className="main__calculator__reset__item">
+                        <div className="main__calculator__reset__item__flex">
+                            <h3 className='main__calculator__reset__amount'>Total</h3>
+                            <h3 className='main__calculator__reset__person'>/ person</h3>
+                        </div>
                         <input type='text' className='main__calculator__reset__input' placeholder='$0.00' readOnly/>
                     </div>
                     <button type="reset" className='main__calculator__reset__btn'>Reset</button>
