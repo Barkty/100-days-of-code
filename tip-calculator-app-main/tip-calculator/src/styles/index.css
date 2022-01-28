@@ -443,7 +443,7 @@ input:focus {
   .main__calculator__reset__amount {
     text-align: left;
     font-family: 'Space Mono';
-    font-size: 16px;
+    font-size: 18px;
     color: white;
     position: relative;
     top: -20px;
@@ -451,7 +451,7 @@ input:focus {
   .main__calculator__reset__person {
     text-align: left;
     font-family: 'Space Mono';
-    font-size: 16px;
+    font-size: 18px;
     color: #949e9d;
     position: relative;
     top: -38px;
@@ -650,7 +650,7 @@ input:focus {
   .main__calculator__reset__amount {
     text-align: left;
     font-family: 'Space Mono';
-    font-size: 16px;
+    font-size: 18px;
     color: white;
     position: relative;
     top: -20px;
@@ -658,7 +658,7 @@ input:focus {
   .main__calculator__reset__person {
     text-align: left;
     font-family: 'Space Mono';
-    font-size: 16px;
+    font-size: 18px;
     color: #949e9d;
     position: relative;
     top: -38px;
@@ -678,6 +678,7 @@ input:focus {
     background: inherit;
     font-family: 'Space Mono';
     font-size: 24px;
+    font-weight: 700;
     color: #1f9888;
   }
   .main__calculator__reset__input::-webkit-input-placeholder {
@@ -857,7 +858,7 @@ input:focus {
   .main__calculator__reset__amount {
     text-align: left;
     font-family: 'Space Mono';
-    font-size: 16px;
+    font-size: 18px;
     color: white;
     position: relative;
     top: -20px;
@@ -865,7 +866,7 @@ input:focus {
   .main__calculator__reset__person {
     text-align: left;
     font-family: 'Space Mono';
-    font-size: 16px;
+    font-size: 18px;
     color: #949e9d;
     position: relative;
     top: -38px;
@@ -885,6 +886,7 @@ input:focus {
     background: inherit;
     font-family: 'Space Mono';
     font-size: 24px;
+    font-weight: 700;
     color: #1f9888;
   }
   .main__calculator__reset__input::-webkit-input-placeholder {
@@ -1064,7 +1066,7 @@ input:focus {
   .main__calculator__reset__amount {
     text-align: left;
     font-family: 'Space Mono';
-    font-size: 16px;
+    font-size: 18px;
     color: white;
     position: relative;
     top: -20px;
@@ -1072,7 +1074,7 @@ input:focus {
   .main__calculator__reset__person {
     text-align: left;
     font-family: 'Space Mono';
-    font-size: 16px;
+    font-size: 18px;
     color: #949e9d;
     position: relative;
     top: -38px;
@@ -1092,6 +1094,7 @@ input:focus {
     background: inherit;
     font-family: 'Space Mono';
     font-size: 24px;
+    font-weight: 700;
     color: #1f9888;
   }
   .main__calculator__reset__input::-webkit-input-placeholder {
