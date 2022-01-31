@@ -101,7 +101,7 @@ const Calculator = () => {
                         </div>
                         <input type='text' className='main__calculator__reset__input' placeholder='$0.00' value={tips} readOnly/>
                     </div>
-                    <button type="reset" className='main__calculator__reset__btn'>Reset</button>
+                    <button type="reset" className='main__calculator__reset__btn' onClick={handleReset}>Reset</button>
                 </div>
             </section>
             <div className="attribution">
